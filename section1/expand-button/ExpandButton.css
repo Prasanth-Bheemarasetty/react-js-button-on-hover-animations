@@ -1,0 +1,30 @@
+.pb-expand-btn {
+  /*Prevent text selection*/
+  user-select: none;
+  /*Change cursor to indicate our button is clickable*/
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  /*Neon Color for Text*/
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+
+  /*Neon color for border*/
+  border: 1px solid #fff;
+  box-shadow: 0 0 5px #fff, inset 0 0 7px #fff;
+
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: "roboto";
+  transition: all 1s;
+  position: relative;
+}
+
+/* To prevent Hovering effects on click in Mobile / Touch enabled devices*/
+@media (hover: hover) {
+  .pb-expand-btn:hover {
+    font-weight: bold;
+    letter-spacing: 8px;
+    border-width: 5px;
+  }
+}

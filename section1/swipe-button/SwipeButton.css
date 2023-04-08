@@ -1,0 +1,38 @@
+.pb-swipe-btn {
+  /* To prevent text selection */
+  user-select: none;
+  /* To change cursor into hand to indicate our component is clickable */
+  cursor: pointer;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: "roboto";
+  font-weight: bold;
+  border: 1px white solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.pb-swipe-btn::before {
+  content: "Thanks : )";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-100%);
+  background-color: #517bff;
+  transition: transform 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* To prevent Hovering effects on click in Mobile / Touch enabled devices*/
+@media (hover: hover) {
+  .pb-swipe-btn:hover::before {
+    transform: translateY(0);
+  }
+}
